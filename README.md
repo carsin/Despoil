@@ -6,7 +6,7 @@ game
 
 ## Ideas, goals and plans. 
 
-### **UI**:
+#### *UI*:
 
 - Event log
 - Planet list 
@@ -16,21 +16,21 @@ game
 - Crafting?
 - Upgrades?
     
-### **Exploration**:
+#### *Exploration*:
 - ASCII Map and text based
 - Buy/craft drones to auto explore
     - Drones will find random planet/asteroid within (upgradable) viscinity of player
         - Once discovered, player can teleport to planet from planet list
 - Buy/craft drills to auto mine discovered planets
     
-### **Planets**:
+#### *Planets*:
 - Mineable resources
 - Random size/resources
 
-### **Market**:
+#### *Market*:
 - Buy / sell raw resources or crafted items
 
-### **Need to plan**:
+#### *Need to plan*:
 - Endgame
 - Goal
 
