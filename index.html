@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<r!DOCTYPE html>
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
@@ -16,25 +16,18 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <header>
-            <div id="title"><h1>despoil.</h1></div>
-        </header>
-        <div id="game">
-            <div class="section">
-                <div id="main">
-                    <div class="main-view" id="map-view">
-                        <canvas id="ascii-map">Sorry, your browser does not support canvas.</canvas>
-                    </div>
+        <div id="gameWrapper">
+            <div class="section" id="mainView">
+                <div id="absoluteHud"></div>
+                <div class="view" id="mapView">
+                    <canvas id="gameMap">Your browser doesn't support canvas ecks dee</canvas>
                 </div>
             </div>
 
-            <div class="section">
-                <div id="log">
-                    <h1 id="log-title">Log</h1>
-                </div>
+            <div class="section" id="logView">
+
             </div>
         </div>
-
         
         <script src="js/vendor/modernizr-3.7.1.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
