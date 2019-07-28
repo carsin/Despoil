@@ -1,28 +1,47 @@
 /* 
- * GLOBAL
- */
+* GLOBAL
+*/
 
 body {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     overflow: hidden;
-     font-family: "Andika", sans-serif;
- }
- 
- .section {
-     padding: 0;
-     margin: 0;
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
- }
+    overflow: hidden;
+    font-family: "Andika", sans-serif;
+}
+
+.section {
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#game {
+    display: flex;
+    height: 95vh;
+}
 
 /* 
- * MAIN 
- */
+* HEADER
+*/
+
+header {
+    display: flex;
+    align-items: center; 
+    height: 64px;
+}
+
+header #title {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* 
+* MAIN 
+*/
 
 #main {
+    padding: 16px;
     width: 85vw;
     height: 100vh;
     background: #888;
@@ -36,13 +55,13 @@ body {
 }
 
 /* 
- * MAP VIEW
- */
+* MAP VIEW
+*/
 
- #map-view {
-     display: flex;
-     justify-content: center;
- }
+#map-view {
+    display: flex;
+    justify-content: center;
+}
 
 #ascii-map {
     width: 40vh;
@@ -51,8 +70,8 @@ body {
 }
 
 /* 
- * LOG
- */
+* LOG
+*/
 
 #log {
     padding: 0;

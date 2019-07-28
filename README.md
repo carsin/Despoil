@@ -40,7 +40,11 @@ ___
 > Subtasks will be added to clarify and simplify complex tasks
 
 - ~~Initalize project~~
-- Set up responsive layout
+- Set up layout
+    - Add sections
+    - Add headeer
+    - Add switching of sections via header buttons
+    - Implement button anims (builtbycarson.com)
 - Set up ASCII Map
 - Add player
 - Add planets
