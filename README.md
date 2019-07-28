@@ -41,8 +41,8 @@ ___
 
 - ~~Initalize project~~
 - Set up layout
-    - Add sections
-    - Add header
+    - ~~Add temporary sections~~
+    - ~~Add temp hud~~
     - Add switching of sections via header buttons
     - Implement button anims (builtbycarson.com)
 - Set up ASCII Map
