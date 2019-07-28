@@ -6,6 +6,7 @@
 
 
 html, body {
+    font-family: "Anika", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: none;
     overflow: hidden;
 }
@@ -26,11 +27,16 @@ html, body {
  * ────────────────────────────────────────────────────────────────────
 */
 
+.view {
+    display: flex;
+}
+
 #mainView {
-    background: #888;
+    background: #474A51;
     height: 100vh;
     width: 80vw;
 }
+
 
 /*
  * ─── HUD ────────────────────────────────────────────────────────────────────────
@@ -39,9 +45,18 @@ html, body {
 /*
  * ─── MAP VIEW ───────────────────────────────────────────────────────────────────
 */
+
+#mapView {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
     
 #mapView #gameMap {
     background: black;
+    /* Temp sizing */
+    width: 400px;
+    height: 400px;
 }
 
 /*
@@ -51,7 +66,9 @@ html, body {
 */
 
 #logView {
-    background: #999;
+    /* Temp border */
+    border-left: 2px solid black;
+    background: #474A51;
     height: 100vh;
     width: 20vw;
 }

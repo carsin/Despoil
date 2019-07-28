@@ -42,7 +42,7 @@ ___
 - ~~Initalize project~~
 - Set up layout
     - Add sections
-    - Add headeer
+    - Add header
     - Add switching of sections via header buttons
     - Implement button anims (builtbycarson.com)
 - Set up ASCII Map
