@@ -1,3 +1,3 @@
 import gameWorld from "/js/modules/World.js";
 
-console.log(gameWorld);
+gameWorld.render(gameWorld.map, 20, $("#map"));

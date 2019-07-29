@@ -109,7 +109,10 @@ html, body {
 }
 
 #mapView #gameMap #map td {
+    text-align: center;
     font-size: 24px;
+    width: 24px;
+    height: 24px;
     font-family: monospace;
     margin: 0;
     padding: 0;
