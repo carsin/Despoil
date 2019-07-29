@@ -98,10 +98,11 @@ html, body {
 }
     
 #mapView #gameMap {
-    background: black;
+    width: 480px;
+    height: 480px;
     /* Temp sizing */
-    width: 400px;
-    height: 400px;
+    margin: 0;
+    padding: 0;
 }
 
 /*
