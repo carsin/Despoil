@@ -95,12 +95,22 @@ html, body {
     height: 100%;
     width: 100%;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
-    
-#mapView #gameMap {
-    width: 480px;
-    height: 480px;
-    /* Temp sizing */
+
+#mapView #gameMap #map {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+}
+
+#mapView #gameMap #map td {
+    font-size: 24px;
+    font-family: monospace;
     margin: 0;
     padding: 0;
 }
