@@ -12,7 +12,7 @@ $(document).ready(() => {
 
 $(".navButton").click((e) => {
     let clickedSection = $(e.target).text().toLowerCase();
-    switch(clickedSection) {
+    switch (clickedSection) {
         case "planets":
             mapView.show();
             inventoryView.hide();
@@ -38,6 +38,8 @@ $(".navButton").click((e) => {
             $(e.target).addClass("currentNav");
             break;
 
-        default: console.log("unknown button pressed."); break;
+        default:
+            console.log("unknown button pressed.");
+            break;
     }
 });
