@@ -43,10 +43,18 @@ ___
 - Set up layout
     - ~~Add temporary sections~~
     - ~~Add temp hud~~
-    - Add switching of sections via header buttons
+    - ~~Add switching of sections via buttons~~
     - Implement button anims (builtbycarson.com)
-- Set up ASCII Map
-- Add player
+- ~~Set up ASCII Map~~
+    - ~~Generate world~~
+    - ~~Render world~~
+- Add entities/player
+    - Should entities be a tile?
+- Update map
+    - Render around player only
+    - Add tile logic
+        - Make tiles clickable to inspect their attributes
+
 - Add planets
 - Add journal / game log
 

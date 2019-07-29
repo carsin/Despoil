@@ -3,7 +3,6 @@ function World() {
 
     this.render = (map, renderDistance, tbody) => {
         // TODO: Render around player instead of whole map
-        
         var currTr = $("<tr></tr>");
         for (var x = 0; x < renderDistance; x++) {
             for (var y = 0; y < renderDistance; y++) {
