@@ -48,6 +48,7 @@ ___
 - ~~Set up ASCII Map~~
     - ~~Generate world~~
     - ~~Render world~~
+    - Add tiles
 - Add entities/player
     - Should entities be a tile?
 - Update map

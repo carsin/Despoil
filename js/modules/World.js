@@ -14,11 +14,12 @@ function World() {
         }
     }
 
-    // Init world tiles
-    for (var x = 0; x < 20; x++) {
-        this.map[x] = [];
-        for (var y = 0; y < 20; y++) {
-            this.map[x][y] = "-";
+    this.initWorld = () => {
+        for (var x = 0; x < 20; x++) {
+            this.map[x] = [];
+            for (var y = 0; y < 20; y++) {
+                this.map[x][y] = ".";
+            }
         }
     }
 }
