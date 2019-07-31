@@ -5,5 +5,3 @@ function Tile(name, id, char, description) {
     this.char = char;
     this.description = description;
 }
-
-export default Tile;

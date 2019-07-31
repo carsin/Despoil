@@ -52,6 +52,10 @@ html, body {
     padding: 8px;
 }
 
+#absoluteHud #tileInfo {
+    position: absolute;
+}
+
 #absoluteHud #navButtons {
     position: absolute;
     margin: 0;
@@ -116,6 +120,14 @@ html, body {
     font-family: monospace;
     margin: 0;
     padding: 0;
+}
+
+#mapView #gameMap #map td:hover {
+    cursor: pointer;
+}
+
+#mapView #gameMap #map td:focus {
+    outline: 1px solid red;
 }
 
 /*

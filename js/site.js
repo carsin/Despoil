@@ -10,6 +10,10 @@ $(document).ready(() => {
     marketView.hide();
 });
 
+//
+// ─── NAVIGATION BUTTONS ─────────────────────────────────────────────────────────
+//
+
 $(".navButton").click((e) => {
     let clickedSection = $(e.target).text().toLowerCase();
     switch (clickedSection) {
@@ -43,3 +47,22 @@ $(".navButton").click((e) => {
             break;
     }
 });
+
+function updateTileInfo() {
+    $("td").click((e) => {
+        var tileId = $(e.target).attr("id")
+        var currX = tileId.substring(0, tileId.indexOf("_"));
+        var currY = tileId.substring(tileId.indexOf("_") + 1);
+
+
+        $("#currentTileDisplay").html(gameWorld.map[currX][currY].name);
+        $("#tileDescriptionDisplay").html(gameWorld.map[currX][currY].description);
+    });
+
+    $("td").focusout((e) => {
+        $("#currentTileDisplay").html("");
+        $("#tileDescriptionDisplay").html("");
+    });
+
+
+}

@@ -4,14 +4,15 @@ function World() {
     this.render = (map, renderDistance, tbody) => {
         // TODO: Render around player instead of whole map
         var currTr = $("<tr></tr>");
-        for (var x = 0; x < renderDistance; x++) {
-            for (var y = 0; y < renderDistance; y++) {
-                currTr.append("<td id=" + x + "_" + y + ">" + map[x][y].char + "</td>")
+        for (var y = 0; y < renderDistance; y++) {
+            for (var x = 0; x < renderDistance; x++) {
+                currTr.append("<td tabindex='-1' id=" + x + "_" + y + ">" + map[x][y].char + "</td>")
             }
 
             tbody.append(currTr);
             currTr = $("<tr></tr>");
         }
+        updateTileInfo();
     }
 
     this.initWorld = (tile) => {
@@ -23,6 +24,3 @@ function World() {
         }
     }
 }
-
-var gameWorld = new World();
-export default gameWorld;

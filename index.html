@@ -28,6 +28,10 @@
                         <button class="navButton">Inventory</button>
                         <button class="navButton">Market</button>
                     </div>
+                    <div id="tileInfo">
+                        <h4 id="currentTileWrapper">Current Tile: <span id="currentTileDisplay"></span></h4>
+                        <h4 id="currentTileDescriptionWrapper">Description: <span id="tileDescriptionDisplay"></span></h4>
+                    </div>
                 </div>
 
                 <!-- VIEWS -->
@@ -56,11 +60,11 @@
         <script>
             window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
         </script>
-        <script type="module" src="js/modules/World.js"></script>
-        <script type="module" src="js/modules/Tile.js"></script>
-        <script type="module" src="js/game.js"></script>
         <script src="js/site.js"></script>
         <script src="js/plugins.js"></script>
+        <script src="js/modules/World.js"></script>
+        <script src="js/modules/Tile.js"></script>
+        <script src="js/game.js"></script>
     </body>
 
     </html>
