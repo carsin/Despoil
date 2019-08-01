@@ -87,6 +87,14 @@ function updateTileInfo() {
 //
 
 // TODO: Listen for keystrokes only on map view page, but adding listener to #mapView is broken.
+var keyIsDown = false;
 $(document).keydown((e) => {
+    if (keyIsDown) return;
+    keyIsDown = true;
+
     player.move(e.keyCode);
+});
+
+$(document).keyup(() => {
+    keyIsDown = false;
 });
