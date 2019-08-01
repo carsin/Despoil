@@ -53,7 +53,18 @@ html, body {
 }
 
 #absoluteHud #tileInfo {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
     position: absolute;
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+#absoluteHud #tileInfo h4 {
+    margin: 10px;
 }
 
 #absoluteHud #navButtons {
