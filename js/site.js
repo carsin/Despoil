@@ -49,6 +49,7 @@ $(".navButton").click((e) => {
     }
 });
 
+// Re-adds events to tile elements whenever they are redrawn.
 function updateTileInfo() {
     $("td").click((e) => {
         $("#tileInfo").show();

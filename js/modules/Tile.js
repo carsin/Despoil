@@ -4,4 +4,6 @@ function Tile(name, id, char, description) {
     this.id = id;
     this.char = char;
     this.description = description;
+
+    tileList.push(this);
 }

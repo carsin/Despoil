@@ -1,5 +1,15 @@
 var gameWorld = new World();
+var tileList = [];
+var entityList = [];
+
+
+
+var player = new Player(10, 10, 4000, "@");
 
 const voidTile = new Tile("Void", 0, ".", "A vast emptiness.")
-gameWorld.initWorld(voidTile);
-gameWorld.render(gameWorld.map, 20, $("#map"));
+
+$(document).ready(() => {
+    gameWorld.initWorld(voidTile);
+    player.init();
+    gameWorld.render(21, $("#map"));
+});

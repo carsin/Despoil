@@ -1,12 +1,18 @@
 function World() {
     this.map = [];
+    this.entityMap = [];
 
-    this.render = (map, renderDistance, tbody) => {
+    // Update DOM table with map values
+    this.render = (renderDistance, tbody) => {
         // TODO: Render around player instead of whole map
         var currTr = $("<tr></tr>");
         for (var y = 0; y < renderDistance; y++) {
             for (var x = 0; x < renderDistance; x++) {
-                currTr.append("<td tabindex='-1' id=" + x + "_" + y + ">" + map[x][y].char + "</td>")
+                if (this.entityMap[x][y] == null) {
+                    currTr.append("<td tabindex='-1' id=" + x + "_" + y + ">" + this.map[x][y].char + "</td>")
+                } else {
+                    currTr.append("<td tabindex='-1' id=" + x + "_" + y + ">" + this.entityMap[x][y].char + "</td>")
+                }
             }
 
             tbody.append(currTr);
@@ -15,11 +21,14 @@ function World() {
         updateTileInfo();
     }
 
+    // Fill map and entity map variables.
     this.initWorld = (tile) => {
-        for (var x = 0; x < 20; x++) {
+        for (var x = 0; x < 21; x++) {
             this.map[x] = [];
-            for (var y = 0; y < 20; y++) {
+            this.entityMap[x] = [];
+            for (var y = 0; y < 21; y++) {
                 this.map[x][y] = tile;
+                this.entityMap[x][y] = null;
             }
         }
     }
