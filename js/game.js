@@ -4,7 +4,7 @@ var entityList = [];
 
 
 
-var player = new Player(10, 10, 4000, "@");
+var player = new Player(10, 10, 4000, "Player", "@", "Your ship.");
 
 const voidTile = new Tile("Void", 0, ".", "A vast emptiness.")
 

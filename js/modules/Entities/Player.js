@@ -1,8 +1,10 @@
-function Player(initialX, initialY, initalMoney, char) {
+function Player(initialX, initialY, initalMoney, name, char, description) {
     this.x = initialX;
     this.y = initialY;
     this.money = initalMoney;
+    this.name = name;
     this.char = char;
+    this.description = description;
 
 
     this.changeMoney = (newAmount) => {

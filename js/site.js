@@ -61,12 +61,18 @@ function updateTileInfo() {
 
         $("#currentTileDisplay").html(gameWorld.map[currX][currY].name);
         $("#tileDescriptionDisplay").html(gameWorld.map[currX][currY].description);
-    });
+
+        if (gameWorld.entityMap[currX][currY] == null) {
+            $("#currentEntityDisplay").html("None");
+            $("#entityDescriptionDisplay").html("None");
+        } else {
+            $("#currentEntityDisplay").html(gameWorld.entityMap[currX][currY].name);
+            $("#entityDescriptionDisplay").html(gameWorld.entityMap[currX][currY].description);
+        }
+     });
 
     $("td").focusout((e) => {
         $("#tileInfo").hide();
-        $("#currentTileDisplay").html("");
-        $("#tileDescriptionDisplay").html("");
     });
 
 
