@@ -49,6 +49,10 @@ $(".navButton").click((e) => {
     }
 });
 
+//
+// ─── TILE INFO UPDATE ───────────────────────────────────────────────────────────
+//
+
 // Re-adds events to tile elements whenever they are redrawn.
 function updateTileInfo() {
     $("td").click((e) => {
@@ -77,3 +81,12 @@ function updateTileInfo() {
 
 
 }
+
+//
+// ─── LISTEN FOR KEYSTROKES ──────────────────────────────────────────────────────
+//
+
+// TODO: Listen for keystrokes only on map view page, but adding listener to #mapView is broken.
+$(document).keydown((e) => {
+    player.move(e.keyCode);
+});

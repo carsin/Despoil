@@ -5,6 +5,7 @@ function World() {
     // Update DOM table with map values
     this.render = (renderDistance, tbody) => {
         // TODO: Render around player instead of whole map
+        tbody.html("");
         var currTr = $("<tr></tr>");
         for (var y = 0; y < renderDistance; y++) {
             for (var x = 0; x < renderDistance; x++) {
